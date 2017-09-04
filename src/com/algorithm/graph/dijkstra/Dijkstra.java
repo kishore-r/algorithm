@@ -95,7 +95,7 @@ public class Dijkstra {
 
     private void displayShortestPath() {
         Node[] nodes = this.graph.getNodes();
-        AlgorithamUtil.println("--------------------------------------------");
+        AlgorithamUtil.println("-----------------------------------------------");
         for (int i = 0; i < nodes.length; i++) {
             AlgorithamUtil.println("Shortest Distance from Node " + this.sourceNode + " to Node " + i + " is : " + nodes[i].getDistanceFromSource());
         }
