@@ -15,6 +15,10 @@ package com.algorithm.graph.dijkstra;
 
 import java.util.ArrayList;
 
+import com.algorithm.graph.AbstractGraphAlgoritham;
+import com.algorithm.graph.Edge;
+import com.algorithm.graph.Graph;
+import com.algorithm.graph.Node;
 import com.algorithm.util.AlgorithamUtil;
 
 /**
@@ -46,7 +50,7 @@ import com.algorithm.util.AlgorithamUtil;
  *        return dist[], prev[]
  *              
  */
-public class Dijkstra {
+public class Dijkstra extends AbstractGraphAlgoritham {
     private int currentSource;
     private Graph graph;
     private int sourceNode;
@@ -93,7 +97,7 @@ public class Dijkstra {
         return tmpNodeIndex;
     }
 
-    private void displayShortestPath() {
+    protected void displayShortestPath() {
         Node[] nodes = this.graph.getNodes();
         AlgorithamUtil.println("-----------------------------------------------");
         for (int i = 0; i < nodes.length; i++) {

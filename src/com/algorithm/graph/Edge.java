@@ -11,7 +11,7 @@
  *    Created on  Aug 31, 2017
  *
  ************************************************************************/
-package com.algorithm.graph.dijkstra;
+package com.algorithm.graph;
 
 public class Edge {
     private int fromNode;
